@@ -23,6 +23,7 @@
 		5DAB05B62738BCE7004459E7 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB05B52738BCE7004459E7 /* MenuModel.swift */; };
 		5DAB05B82738C296004459E7 /* SplitPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB05B72738C296004459E7 /* SplitPanelViewController.swift */; };
 		5DAB05BA2738DBFA004459E7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5DAB05B92738DBFA004459E7 /* README.md */; };
+		5DC272732807BCCB0059B7FF /* DetailSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC272722807BCCB0059B7FF /* DetailSubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		5DAB05B52738BCE7004459E7 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		5DAB05B72738C296004459E7 /* SplitPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitPanelViewController.swift; sourceTree = "<group>"; };
 		5DAB05B92738DBFA004459E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5DC272722807BCCB0059B7FF /* DetailSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		5DAB05A62738B458004459E7 /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
+				5DC272712807BCB40059B7FF /* SubView */,
 				5DAB05A72738B47D004459E7 /* DetailViewController.swift */,
 				5DAB05A82738B47D004459E7 /* DetailViewController.xib */,
 			);
@@ -159,6 +162,14 @@
 				5DAB05B52738BCE7004459E7 /* MenuModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5DC272712807BCB40059B7FF /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				5DC272722807BCCB0059B7FF /* DetailSubViewController.swift */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 				5DAB05AD2738B4A3004459E7 /* MenuViewController.swift in Sources */,
 				5DAB05B82738C296004459E7 /* SplitPanelViewController.swift in Sources */,
 				5DAB05872738A9EF004459E7 /* AppDelegate.swift in Sources */,
+				5DC272732807BCCB0059B7FF /* DetailSubViewController.swift in Sources */,
 				5DAB05892738A9EF004459E7 /* SceneDelegate.swift in Sources */,
 				5DAB05A92738B47D004459E7 /* DetailViewController.swift in Sources */,
 				5DAB05A12738AD36004459E7 /* SplitViewController.swift in Sources */,
@@ -393,6 +405,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 397B5CCZGM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SplitViewController/ProjectUtil/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -420,6 +433,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 397B5CCZGM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SplitViewController/ProjectUtil/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

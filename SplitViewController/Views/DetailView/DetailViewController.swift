@@ -16,7 +16,7 @@ class DetailViewController: UIViewController {
         return vc
     }
     // ======================================================
-
+    
     /// 뷰 배경 생상
     var backViewColor: UIColor = .white
     
@@ -28,5 +28,13 @@ class DetailViewController: UIViewController {
     /// 뷰 셋팅
     private func initView() {
         self.view.backgroundColor = self.backViewColor
+    }
+    
+    /// 화면 이동 버튼 클릭 시
+    /// - Parameter sender: 버튼
+    @IBAction func didTappedMoveBtn(_ sender: UIButton) {
+        /// 상세 이동
+        let moveVC = DetailSubViewController.instance(backViewColor)
+        self.navigationController?.pushViewController(moveVC, animated: true)
     }
 }

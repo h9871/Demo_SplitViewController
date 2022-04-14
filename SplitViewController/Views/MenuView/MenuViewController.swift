@@ -66,6 +66,14 @@ class MenuViewController: UIViewController {
         self.collectionView.collectionViewLayout = self.createLayout()
     }
     
+    /// [Split] 상세 뷰 교체
+    /// - Parameter item: 아이템
+    private func changedSubDetailView(item: MenuModel) {
+        let detailVC = DetailViewController.instance(item.color)
+        let moveVC = UINavigationController(rootViewController: detailVC)
+        self.showDetailViewController(moveVC, sender: nil)
+    }
+    
     @IBAction func didTappedBackBtn(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -94,9 +102,7 @@ extension MenuViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let row = indexPath.row
         let item = self.menuList[row]
-        
-        let detailVC = DetailViewController.instance(item.color)
-        self.showDetailViewController(detailVC, sender: nil)
+        self.changedSubDetailView(item: item)
     }
 }
 
